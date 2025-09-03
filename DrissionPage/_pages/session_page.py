@@ -204,6 +204,8 @@ class SessionPage(BasePage):
             kwargs['headers'] = CaseInsensitiveDict(format_headers(kwargs['headers']))
         else:
             kwargs['headers'] = CaseInsensitiveDict()
+        if self.session and self.session.proxies:
+            kwargs['proxies'] = self.session.proxies
 
         # 设置referer和host值
         parsed_url = urlparse(url)

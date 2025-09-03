@@ -1,19 +1,12 @@
 # -*- coding:utf-8 -*-
 from setuptools import setup, find_packages
-from DrissionPage import __version__
-
-with open("README.md", "r", encoding='utf-8') as fh:
-    long_description = fh.read()
 
 setup(
     name="DrissionPage",
-    version=__version__,
+    version="4.1.1.2",
     author="g1879",
     author_email="g1879@qq.com",
     description="Python based web automation tool. It can control the browser and send and receive data packets.",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    # license="BSD",
     keywords="DrissionPage",
     url="https://DrissionPage.cn",
     include_package_data=True,
